@@ -1,30 +1,65 @@
 {
     "Track name": [
         "Defiler",
-        "The Day We'll Be Gone"
+        "King Me",
+        "Proponent for Sentience III - The Extermination",
+        "The Day We'll Be Gone",
+        "Sugar",
+        "Becoming",
+        "Clearing Skies"
     ],
     "Artist": [
         "Paradise Lost",
-        "Fleshgod Apocalypse"
+        "Lamb of God",
+        "Allegaeon",
+        "Fleshgod Apocalypse",
+        "Fleshgod Apocalypse",
+        "LIK",
+        "Dark Tranquillity"
     ],
     "Album": [
         "Obsidian",
-        "Veleno (Deluxe Version)"
+        "Resolution (Deluxe Edition)",
+        "Proponent for Sentience",
+        "Veleno (Deluxe Version)",
+        "Veleno (Deluxe Version)",
+        "Misanthropic Breed",
+        "Atoma"
     ],
     "Duration h:m:s": [
         "0:04:45",
-        "0:05:57"
+        "0:06:35",
+        "0:06:59",
+        "0:05:57",
+        "0:04:17",
+        "0:05:34",
+        "0:03:33"
     ],
     "Release date": [
         "2020-05-15",
-        "2019-05-24"
+        "2012-01-24",
+        "2016-09-23",
+        "2019-05-24",
+        "2019-05-24",
+        "2020-09-25",
+        "2016-11-04"
     ],
     "Popularity": [
         21,
-        17
+        16,
+        23,
+        17,
+        21,
+        15,
+        34
     ],
     "Track id": [
         "3swK7BSN7yIybnrToK25JN",
-        "5849DP9Og3QP8tUl88FZI6"
+        "1ctEoeRxT41iOKcQjPiQ6a",
+        "4gygOR6iVRMd8nTCzIqNAS",
+        "5849DP9Og3QP8tUl88FZI6",
+        "5B2YaBpNbg9vEaFYH5wO2u",
+        "7LsTx8jZt8KbQ1b6yB1Pq8",
+        "7rEjwm7QMkY3cdxmBHjgtX"
     ]
 }

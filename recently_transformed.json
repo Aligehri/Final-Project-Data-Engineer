@@ -1,5 +1,11 @@
 {
     "Track name": [
+        "Take A Look Around",
+        "Break Stuff",
+        "Alone I Break",
+        "Thoughtless",
+        "Here to Stay",
+        "Blind",
         "Right Now",
         "Did My Time",
         "Trash",
@@ -43,15 +49,15 @@
         "ΠΥΡ ΑΕΝΑΟΝ",
         "City of God",
         "Blood on Your Lips",
-        "Aggressor",
-        "Triumph of Death",
-        "In the Minds of Evil",
-        "A Perfect Day to Die - 2020 Version",
-        "Strike Fast Strike Hard",
-        "66'fucking'6",
-        "Drone Corpse Aviator"
+        "Aggressor"
     ],
     "Artist": [
+        "Limp Bizkit",
+        "Limp Bizkit",
+        "Korn",
+        "Korn",
+        "Korn",
+        "Korn",
         "Korn",
         "Korn",
         "Korn",
@@ -95,15 +101,15 @@
         "Aetherian",
         "Sodom",
         "Sodom",
-        "Vredehammer",
-        "Vader",
-        "Deicide",
-        "Onslaught",
-        "Onslaught",
-        "Onslaught",
-        "Archspire"
+        "Vredehammer"
     ],
     "Album": [
+        "Chocolate Starfish And The Hot Dog Flavored Water",
+        "Significant Other",
+        "Untouchables",
+        "Untouchables",
+        "Untouchables",
+        "Korn",
         "Take A Look In The Mirror",
         "Take A Look In The Mirror",
         "Issues",
@@ -147,15 +153,15 @@
         "At Storm's Edge",
         "Sodom",
         "Sodom",
-        "Viperous",
-        "Tibi Et Igni",
-        "In the Minds of Evil",
-        "Generation Antichrist",
-        "Generation Antichrist",
-        "VI",
-        "Bleed the Future"
+        "Viperous"
     ],
     "Duration h:m:s": [
+        "0:05:21",
+        "0:02:46",
+        "0:04:16",
+        "0:04:32",
+        "0:04:30",
+        "0:04:18",
         "0:03:09",
         "0:04:04",
         "0:03:26",
@@ -199,13 +205,7 @@
         "0:04:29",
         "0:04:36",
         "0:04:42",
-        "0:04:49",
-        "0:03:45",
-        "0:03:53",
-        "0:03:50",
-        "0:04:38",
-        "0:05:11",
-        "0:03:46"
+        "0:04:49"
     ],
     "Day played": [
         "2024-08-01",
@@ -260,6 +260,12 @@
         "2024-08-01"
     ],
     "Time played": [
+        "06:13:09.24",
+        "06:07:47.80",
+        "06:05:00.86",
+        "06:00:42.28",
+        "05:56:09.10",
+        "05:51:37.72",
         "05:47:19.20",
         "05:44:09.08",
         "05:40:04.38",
@@ -303,15 +309,15 @@
         "02:04:12.64",
         "01:59:43.13",
         "01:55:07.03",
-        "01:50:23.62",
-        "01:45:32.30",
-        "01:41:46.16",
-        "01:37:52.74",
-        "01:34:02.00",
-        "01:29:21.82",
-        "01:24:10.28"
+        "01:50:23.62"
     ],
     "Release date": [
+        "2000-10-17",
+        "1999",
+        "2002-06-11",
+        "2002-06-11",
+        "2002-06-11",
+        "1994-10-11",
         "2003-11-21",
         "2003-11-21",
         "1999-11-09",
@@ -355,15 +361,15 @@
         "2023-07-14",
         "2006-04-21",
         "2006-04-21",
-        "2020-03-06",
-        "2014-05-30",
-        "2013-11-26",
-        "2020-08-07",
-        "2020-08-07",
-        "2013-09-20",
-        "2021-10-29"
+        "2020-03-06"
     ],
     "Track popularity": [
+        74,
+        81,
+        53,
+        55,
+        63,
+        68,
         60,
         56,
         58,
@@ -407,15 +413,15 @@
         18,
         36,
         24,
-        18,
-        43,
-        44,
-        12,
-        27,
-        31,
-        46
+        18
     ],
     "Track id": [
+        "2avKuMN2QXkaG9vvHa2JLt",
+        "5cZqsjVs6MevCnAkasbEOX",
+        "2f1BjAVy4k8B3pB4qBntHj",
+        "6HlFxHQ5nn6HYGxOOYIrLm",
+        "5NHTtXGCdO7ul16xr0q93w",
+        "1pr9TZGOXeJUggIal1Wq3R",
         "19fYhk0wzXqUOoBqkPsYCP",
         "1F0S2kbZhHAw19f9ihA3FH",
         "4DEYwr2SLpvj6plN2ngIfB",
@@ -459,15 +465,15 @@
         "2HRS9vL4bvIgMNMKcdAMui",
         "1c6YG4h3oXo4W0iLtQigeX",
         "5YgrXGygfMRJJrvXgS9xHC",
-        "71AoZRgS9pXyaqh1AalM53",
-        "4nwkxiAVNFMlF360A80vqQ",
-        "3D6ZPZrFk2CHZCJ2STxHW7",
-        "51F4jcsWD7ctddqKZUS22j",
-        "0h6sUQTO9bDmM8AdAiKxfG",
-        "2vPrQslUr412s79OUVNvn9",
-        "74p4l00JKebWPlAfpqi9Xq"
+        "71AoZRgS9pXyaqh1AalM53"
     ],
     "Artist id": [
+        "165ZgPlLkK7bf5bDoFc6Sb",
+        "165ZgPlLkK7bf5bDoFc6Sb",
+        "3RNrq3jvMZxD9ZyoOZbQOD",
+        "3RNrq3jvMZxD9ZyoOZbQOD",
+        "3RNrq3jvMZxD9ZyoOZbQOD",
+        "3RNrq3jvMZxD9ZyoOZbQOD",
         "3RNrq3jvMZxD9ZyoOZbQOD",
         "3RNrq3jvMZxD9ZyoOZbQOD",
         "3RNrq3jvMZxD9ZyoOZbQOD",
@@ -511,12 +517,6 @@
         "3dpDSmg1jDGvwMVQxhDYlw",
         "6SYbLA9utoNsllunR1TnkM",
         "6SYbLA9utoNsllunR1TnkM",
-        "5ket6f4XIg8c3nT5gjQ6Io",
-        "2s5DSt9VBNzAn2TbtDHzFZ",
-        "2K3GorTixXKAiwe2t9lO89",
-        "71lhIVHJ24x9hEcwFSWuOf",
-        "71lhIVHJ24x9hEcwFSWuOf",
-        "71lhIVHJ24x9hEcwFSWuOf",
-        "7F9ZL4TJNr8AoU0UUQX8ih"
+        "5ket6f4XIg8c3nT5gjQ6Io"
     ]
 }
