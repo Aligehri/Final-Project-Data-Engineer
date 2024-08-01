@@ -15,12 +15,13 @@ def main():
     host_rs = config('host_rs')
     port_rs = config('port_rs')
     database_rs = config('database_rs')
+    schema = config('schema')
 
     extract_data(SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI)
 
     transform_data()
 
-    load_data(user_rs, pass_rs, host_rs, port_rs, database_rs)
+    load_data(user_rs, pass_rs, host_rs, port_rs, database_rs,schema)
 
 if __name__ == '__main__':
     main()

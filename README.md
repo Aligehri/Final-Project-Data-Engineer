@@ -1,4 +1,4 @@
-<p align="center" style="font-size: 3em;">
+<p align="center" style="font-size: 4em;">
   <strong>Proyecto final del curso Data Engineer</strong>
 </p>
 
@@ -10,17 +10,18 @@ Script que extraiga datos de una API pública y crear la tabla en Redshift para 
 
 Este script de Python se conecta a la API de Spotify para extraer y analizar datos sobre la actividad musical del usuario. Las principales funcionalidades incluyen:
 
-*Recopilación de Datos:
+* Recopilación de Datos:
 
 1. Obtiene las últimas 50 canciones reproducidas por el usuario.
 2. Recupera el top 50 de canciones más escuchadas del usuario.
 3. Identifica los 50 artistas más escuchados.
 
-*Carga en Amazon Redshift:
+* Carga en Amazon Redshift:
 
 Inserta los datos recopilados en una base de datos Amazon Redshift para su análisis y almacenamiento.
 
 # Requisitos
+
 * Cuenta en spotify
 
 * Credenciales de amazon redshift
@@ -43,7 +44,7 @@ https://developer.spotify.com/
 
 Ve al dashboard y crea una app. Llena los campos necesarios, debería verse así:
 
-![Ejemplo](https://drive.google.com/file/d/1pH6brsI04qT9qDHVvutiTkagWFCRwrYf/view?usp=sharing)
+![Ejemplo](/ejemplo.png)
 
 Después ve a los ajustes de tu app y copia el Client Id y el Client Secret que aprece en información básica.
 
@@ -62,6 +63,7 @@ pass_rs =  ' '
 host_rs = ' '
 port_rs = '5439'
 database_rs = ' '
+schema = ' '
 ```
 
 3. **Ejecuta el programa**
@@ -75,3 +77,22 @@ Inmediatamente después de ejecutar el programa, aparecerá un link. Debes acced
 
 5. **Pega el link**
 Después de autenticarte y dar permiso a la app, serás redirigido a otro link. Debes copiar y pegar el link en la Terminal, aunque la página mande un mensaje de error.
+
+# Opcional
+
+Puedes cambiar el límite de canciones y artistas mostrados, en el archivo extract.py en la carpeta modules en las líneas 61-63. Sólo se aceptan valores entre 1 y 50.
+
+```bash
+#limit = [1-50]
+recently = sp.current_user_recently_played(limit=50, after=date_timestamp)
+top_tracks = sp.current_user_top_tracks(limit=50,offset=0,time_range='long_term')
+top_artists = sp.current_user_top_artists(limit=50,offset=0,time_range='long_term')
+```
+
+También puedes cambiar el período de tiempo del top artist y top tracks. Recibe los siguientes valores:
+
+* short_term = 4 semanas
+
+* medium_term = 6 meses
+
+* long_term = 1 año
