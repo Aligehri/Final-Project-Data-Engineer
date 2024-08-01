@@ -1,0 +1,9 @@
+{
+    "items": [],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "href": "https://api.spotify.com/v1/me/top/artists?offset=0&limit=50&time_range=long_term",
+    "next": null,
+    "previous": null
+}
