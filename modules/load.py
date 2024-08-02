@@ -29,3 +29,8 @@ def load_data(user, password, host, port, db, schema):
         conn, 
         index=False,
         if_exists='replace')
+    
+    print()
+    print()
+    print("The process has finished")
+    print('Check the database to see the data loaded')
