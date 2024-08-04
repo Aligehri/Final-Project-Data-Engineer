@@ -30,6 +30,8 @@ def load_data(user, password, host, port, db, schema):
         index=False,
         if_exists='replace')
     
+    conn.close()
+    
     print()
     print()
     print("The process has finished")
