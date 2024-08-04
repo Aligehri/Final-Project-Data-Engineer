@@ -1,6 +1,4 @@
-<p align="center" style="font-size: 4em;">
-  <strong>Proyecto final del curso Data Engineer</strong>
-</p>
+# **Proyecto final del curso Data Engineer**
 
 # Primer consigna
 
