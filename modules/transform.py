@@ -134,17 +134,18 @@ def transform_data():
         top_artists_df['Artist id'].append(check_data(item,['id']))
         top_artists_df['Date loaded data'].append(str(datetime.date.today()))
 
-    
-    top_tracks_df.drop_duplicates(keep='first')
-    top_artists_df.drop_duplicates(keep='first')
-
-    save_jason('recently_transformed.json',recently_df)
-    save_jason('top_tracks_transformed.json',top_tracks_df)
-    save_jason('top_artists_transformed.json', top_artists_df)
-
     recently_df = pd.DataFrame(recently_df)
     top_tracks_df = pd.DataFrame(top_tracks_df)
     top_artists_df = pd.DataFrame(top_artists_df)
+
+    top_tracks_df.drop_duplicates(keep='first')
+    top_artists_df.drop_duplicates(keep='first')
+
+    save_jason('recently_transformed.json',recently_df.to_dict(orient='list'))
+    save_jason('top_tracks_transformed.json',top_tracks_df.to_dict(orient='list'))
+    save_jason('top_artists_transformed.json', top_artists_df.to_dict(orient='list'))
+
+    
 
     #Print Data frames for a preview
 
