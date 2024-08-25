@@ -1,4 +1,6 @@
-# **Proyecto final del curso Data Engineer**
+<p align='center'>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:ff0000,100:6400ff&text=Proyecto%20final%20Data%20Engineer&fontSize=59&fontAlign=50&fontAlignY=41&fontColor=00000000&stroke=00caa9&strokeWidth=2"/>
+</p>
 
 # Primer consigna
 
@@ -94,3 +96,6 @@ También puedes cambiar el período de tiempo del top artist y top tracks. Recib
 * medium_term = 6 meses
 
 * long_term = 1 año
+<p align='center'>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:ff0000,100:6400ff&section=footer"/>
+</p>
