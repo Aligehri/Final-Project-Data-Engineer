@@ -4,7 +4,13 @@ from sqlalchemy import create_engine
 from decouple import config
 import json
 
-def load_data(user, password, host, port, db, schema):
+def load_data():
+    user = config('user_rs')
+    password = config('pass_rs')
+    host = config('host_rs')
+    port = config('port_rs')
+    db = config('database_rs')
+    schema = config('schema')
 
     conn = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
