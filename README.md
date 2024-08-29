@@ -44,7 +44,7 @@ https://developer.spotify.com/
 
 Ve al dashboard y crea una app. Llena los campos necesarios, debería verse así:
 
-![Ejemplo](/ejemplo.png)
+![Ejemplo](/Images/ejemplo.png)
 
 Después ve a los ajustes de tu app y copia el Client Id y el Client Secret que aprece en información básica.
 
