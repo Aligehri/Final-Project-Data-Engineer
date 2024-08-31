@@ -15,6 +15,7 @@ USER airflow
 RUN pip install --no-cache-dir -r /requirements.txt
 
 USER airflow
+COPY . .
 
 ENTRYPOINT ["/entrypoint"]
 CMD ["bash"]

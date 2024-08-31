@@ -14,28 +14,14 @@ def load_data():
 
     conn = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
 
-    recently_df = pd.DataFrame(read_json('recently_transformed.json'))
-    top_tracks_df = pd.DataFrame(read_json('top_tracks_transformed.json'))
-    top_artists_df = pd.DataFrame(read_json('top_artists_transformed.json'))
+    tracks_df = pd.DataFrame(read_json('tracks_transformed.json'))
 
-    recently_df.to_sql(
-        f'recently_played.{schema}',
+    tracks_df.to_sql(
+        f'tracks.{schema}',
         conn, 
         index=False,
         if_exists='replace')
-
-    top_tracks_df.to_sql(
-        f'top_tracks.{schema}',
-        conn, 
-        index=False,
-        if_exists='replace')
-
-    top_artists_df.to_sql(
-        f'top_artists.{schema}',
-        conn, 
-        index=False,
-        if_exists='replace')
-    
+  
     print()
     print()
     print("The process has finished")
