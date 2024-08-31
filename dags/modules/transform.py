@@ -22,7 +22,7 @@ def check_data(item, keys):
             return "No data"
     return value
 
-def transform_data():
+def transform_data(exec_date, path):
 
     tracks = read_json('playlist_info.json')
 

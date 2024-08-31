@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from decouple import config
 import json
 
-def load_data():
+def load_data(exec_date, path):
     user = config('user_rs')
     password = config('pass_rs')
     host = config('host_rs')

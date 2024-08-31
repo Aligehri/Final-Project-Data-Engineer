@@ -8,7 +8,7 @@ def save_jason(file,data):
         json.dump(data, jf, ensure_ascii=False, indent=4)
 
 
-def extract_data():
+def extract_data(exec_date, path):
 
     #Client authorization:
 
