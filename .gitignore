@@ -1,10 +1,6 @@
 .env
 .cache
-recently.json
-recently_transformed.json
-top_tracks.json
-top_tracks_transformed.json
-top_artists.json
-top_artists_transformed.json
+Taskfile.yml
 modules/__pycache__/
 *.pyc
+*.json
