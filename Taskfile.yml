@@ -1,0 +1,51 @@
+version: '3'
+
+# silent: true
+
+env:
+  ROOT_PROJECT: ./
+  DOCKER: docker-compose.yaml
+
+tasks:
+  start_project:
+    cmds:
+      - echo -e "AIRFLOW_UID=$(id -u)" > $ROOT_PROJECT/.env
+      - |
+        cat <<EOF >> $ROOT_PROJECT/.env
+        #Redshift Credentials:
+
+        user_rs = ''
+        pass_rs =  ''
+        host_rs = ''
+        port_rs = 5439
+        database_rs = ''
+        schema = ''
+        
+        #Email Info:
+        EMAIL=
+        EMAIL_PASSWORD=
+        SMTP_HOST=smtp.gmail.com
+        SMTP_STARTTLS=True
+        SMTP_SSL=False
+        SMTP_USER=
+        SMTP_PASSWORD=
+        SMTP_PORT=587
+        SMTP_MAIL_FROM=
+
+        #Spotify Credentials:
+        SPOTIPY_CLIENT_ID = ''
+        SPOTIPY_CLIENT_SECRET = ''
+        EOF
+      - mkdir -p $ROOT_PROJECT/{raw_data,processed_data,dags,logs,plugins,config}
+      - docker compose -f $ROOT_PROJECT/$DOCKER up airflow-init --build
+      - docker compose -f $ROOT_PROJECT/$DOCKER up -d --build
+
+  down_project:
+      - docker compose -f $ROOT_PROJECT/$DOCKER down
+
+  cleanup: 
+    cmds:
+      - rm -rf  $ROOT_PROJECT/{raw_data,processed_data,logs,plugins,config}
+      - rm -f   $ROOT_PROJECT/.env
+      - rm -rf  $ROOT_PROJECT/dags/*pycache*
+      - rm -rf  $ROOT_PROJECT/dags/*/*pycache*

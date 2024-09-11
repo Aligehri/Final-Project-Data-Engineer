@@ -3,12 +3,12 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
-from modules import get_defaultairflow_args, extract_data, transform_data, load_data
+from modules import get_defaultairflow_args, extract_data, transform_data, load_data, send_mail
 
 with DAG(
     dag_id="spotify_etl",
     default_args=get_defaultairflow_args(),
-    description="Statistics of your Spotify account",
+    description="Data of a Spotify playlist",
     schedule_interval="@once",
     catchup=False,
 ) as dag:
@@ -37,5 +37,11 @@ with DAG(
         op_args=args,
     )
 
+    # 4. Mailing
+    send_mail = PythonOperator(
+        task_id="mail_sender",
+        python_callable=send_mail,
+    )
+
     # Task dependencies
-    task_extract >> task_transform >> task_load_data
+    task_extract >> task_transform >> task_load_data >> send_mail
