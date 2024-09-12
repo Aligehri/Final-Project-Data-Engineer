@@ -20,8 +20,8 @@ def send_mail(**context):
     <html>
     <body>
         <p>Hey!</p>
-        <p>La ETL de Spotify del proyecto de Hazzael Aligehri</p>
-        <p>se ha completado con éito</p>
+        <p>El proceso ETL de Spotify del proyecto de Hazzael Aligehri</p>
+        <p>se ha completado con éxito</p>
     </body>
     </html>
     """

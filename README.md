@@ -4,7 +4,7 @@
 
 # Consigna
 
-Script que extraiga datos de una API pública y crear la tabla en Redshift para posterior carga de sus datos en una base de datos de Amazon Redshift. Corre en un container de Docker y esta embebido en un DAG de Airflow dentro del container.
+Script que extraiga datos de una API pública y crear la tabla en Redshift para posterior carga de sus datos en una base de datos de Amazon Redshift. Corre en un container de Docker y esta embebido en un DAG de Airflow dentro del container. Airflow está configurado para mandar alertas por correo.
 
 
 # Descripción
@@ -15,7 +15,9 @@ Este script de Python se conecta a la API de Spotify para extraer datos de la pl
 
 * Credenciales en Spotify Developers
 
-* Credenciales de amazon redshift
+* Credenciales de Amazon Redshift
+
+* Cuenta de correo electrónico
 
 # Instrucciones
 
@@ -25,13 +27,9 @@ git clone https://github.com/Aligehri/Final-Proyect-Data-Engineer.git
 ```
 1. **Crea las carpetas necesarias**
 ```bash
-mkdir -p ./{logs,config,plugins,raw_data,processed_data}
+   sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d
 ```
-2. **Crea un .env para poner tus credenciales de Spotify y Amazon Redshift**
-```bash
-echo -e "AIRFLOW_UID=$(id -u)" >> ./.env
-```
-3. **Crea y agrega credenciales para usar la api de spotify y conectar con Redshift**
+2. **Crea y agrega credenciales para usar la api de Spotify**
 
 Abre tu cuenta de spotify en el siguiente link:
 
@@ -43,36 +41,51 @@ Ve al dashboard y crea una app. Llena los campos necesarios, debería verse así
 
 Después ve a los ajustes de tu app y copia el Client Id y el Client Secret que aprece en información básica.
 
-Copialos y pegalos en el archivo .env que se creó al ejecutar el código anterior con los siguientes nombres:
+Copialos y pegalos en el archivo Taskfile.yml con los siguientes nombres:
 
 ```bash
 
 SPOTIPY_CLIENT_ID = ' '
 SPOTIPY_CLIENT_SECRET = ' '
 
-#Información Redshift: 
-
-user_rs = ' '
-pass_rs =  ' '
-host_rs = ' '
-port_rs = '5439'
-database_rs = ' '
-schema = ' '
 ```
+3. **Llena tus datos en el archivo Taskfile.yml**
+```bash
+        #Redshift Credentials:
+
+        user_rs = ''
+        pass_rs =  ''
+        host_rs = ''
+        port_rs = 5439
+        database_rs = ''
+        schema = ''
+        
+        #Email Info:
+        EMAIL=
+        EMAIL_PASSWORD=
+        SMTP_HOST=smtp.gmail.com
+        SMTP_STARTTLS=True
+        SMTP_SSL=False
+        SMTP_USER=
+        SMTP_PASSWORD=
+        SMTP_PORT=587
+        SMTP_MAIL_FROM=
+
+        #Spotify Credentials:
+        SPOTIPY_CLIENT_ID = ''
+        SPOTIPY_CLIENT_SECRET = ''
+```
+En el archivo ya está la plantilla con los datos que necesita.
 
 4. **Ejecuta el siguiente código y espera a que finalice**
 ```bash
-docker compose up airflow-init
+./bin/task start_project
 ```
-5. **Levanta el contenedor**
-```bash
-docker compose up
-```
-6. **Abre la interfaz Airflow en el purto 8080**
+5. **Abre la interfaz Airflow en el purto 8080**
 
-7. **Agrega la conexión a Redshift en la interfaz de Airflowcon los mismos datos que agregaste en el archivo .env**
+6. **Agrega la conexión a Redshift en la interfaz de Airflowcon los mismos datos que agregaste en el archivo .env**
 
-8. **Ejecuta el Dag en la interfaz de Airflow**
+7. **Ejecuta el Dag en la interfaz de Airflow**
 
 
 # Opcional
